@@ -1,0 +1,11 @@
+<?php
+
+
+namespace App\Enums;
+
+enum RecipeDifficultyLevel: string
+{
+    case Bajo = 'draft';
+    case Medio = 'medio';
+    case Alto = 'alto';
+}
