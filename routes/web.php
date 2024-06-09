@@ -1,11 +1,15 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RecipeController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [RecipeController::class, 'index'])->name('home');
+
+Route::get('recipes/{recipe:slug}', [RecipeController::class, 'show']);
+Route::get('categories/{category:slug}', [CategoryController::class, 'show']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
