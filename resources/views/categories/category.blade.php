@@ -1,4 +1,4 @@
-<x-layout>
+<x-app-layout>
     <main class="max-w-6xl mx-auto pb-20 mt-6 lg:mt-14 space-y-6">
         
         @if ($recipes->count())
@@ -9,4 +9,4 @@
         @endif
 
     </main>
-</x-layout>
+</x-app-layout>

@@ -2,7 +2,7 @@
     use Carbon\Carbon;
 @endphp
 
-<x-layout>
+<x-app-layout>
     <main class="max-w-6xl mx-auto pb-20 mt-10 lg:mt-14 space-y-6">
         <article class="max-w-5xl mx-auto px-6 md:grid md:grid-cols-12 gap-x-6">
             
@@ -68,7 +68,7 @@
 
         </article>
     </main>
-</x-layout>
+</x-app-layout>
 
 
 
