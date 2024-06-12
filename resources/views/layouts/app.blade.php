@@ -28,7 +28,19 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main class="max-w-6xl mx-auto pb-20 mt-4 lg:mt-14 space-y-6">
+                @if(auth()->check())
+                    <div>
+                        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                                <div class="p-6 text-gray-900">
+                                    Bienvenido/a, {{ Auth::user()->name }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+
                 {{ $slot }}
             </main>
         </div>
