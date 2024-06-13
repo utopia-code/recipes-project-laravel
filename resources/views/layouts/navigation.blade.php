@@ -15,14 +15,14 @@
                     <x-nav-link :href="url('/')" :active="request()->routeIs('home')">
                         {{ __('Home') }}
                     </x-nav-link>
-                    <x-nav-link :href="url('/api/recipes/1')">
+                    <x-nav-link :href="url('/api/recipes/1')" target="_blank">
+                        {{ __('API_recipes') }}
+                    </x-nav-link>
+                    <x-nav-link :href="url('/api/recipe/1')" target="_blank">
                         {{ __('API_recipe') }}
                     </x-nav-link>
-                    <x-nav-link :href="url('/api/recipe1')">
+                    <x-nav-link :href="url('/api/category/1/1')" target="_blank">
                         {{ __('API_category') }}
-                    </x-nav-link>
-                    <x-nav-link :href="url('/api/recipes/1/1')">
-                        {{ __('API_recipes') }}
                     </x-nav-link>
                     
                     @if(auth()->check())
@@ -97,14 +97,14 @@
             <x-responsive-nav-link :href="url('/')" :active="request()->routeIs('home')">
                 {{ __('Home') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="url('/api/recipes/1')">
+            <x-responsive-nav-link :href="url('/api/recipes/1')" target="_blank">
+                {{ __('API_recipes') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="url('/api/recipe/1')" target="_blank">
                 {{ __('API_recipe') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="url('/api/recipe1')">
+            <x-responsive-nav-link :href="url('/api/category/1/1')" target="_blank">
                 {{ __('API_category') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="url('/api/recipes/1/1')">
-                {{ __('API_recipes') }}
             </x-responsive-nav-link>
             
             @if(auth()->check())
