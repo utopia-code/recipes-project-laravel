@@ -69,13 +69,3 @@
     </article>
 
 </x-app-layout>
-
-
-
-
-
-
-<!-- <p class="font-bold mb-2">Para 4 personas:</p><ul><li>Patatas 700 g</li><li>Cebolla 300 g</li><li>Huevos 6</li><li>Sal</li><li>Aceite de oliva</li></ul> -->
-
-
-

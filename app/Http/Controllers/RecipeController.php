@@ -22,7 +22,6 @@ class RecipeController extends Controller
         $selectedRecipes = $selectedFixedRecipes->merge($selectedRandomRecipes);
 
         return view('recipes.index', ['selectedRecipes' => $selectedRecipes]);
-        return view('home', compact('selectedRecipes'));
     }
 
     public function show(Recipe $recipe) 

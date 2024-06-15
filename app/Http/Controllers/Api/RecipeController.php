@@ -11,15 +11,9 @@ class RecipeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request, $id) 
+    public function index() 
     {
-        $recipes = Recipe::select('id', 'name', 'published_at')
-            ->orderBy('id', 'desc')
-            ->skip($startIndex)
-            ->take($perPage)
-            ->get();
-
-        return response()->json($recipes);
+        // 
     }
 
     /**
